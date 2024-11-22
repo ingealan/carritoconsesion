@@ -28,8 +28,12 @@ public class Loginservlet extends HttpServlet {
                 .findAny();
 
          */
+        //Implementamos el objeto de la sesion
         LoginService auth = new LoginServiceImplement();
+        /*creamos una variable opcionale n la cual guardamos el nombre obtenido de la clase
+        * getUsername*/
         Optional<String> usernameOptional = auth.getUsername(req);
+        //Si el username esta presente quiero que me muestre la informacion del login exitoso
         if (usernameOptional.isPresent()) {
             //Creo la plantilla html
             resp.setContentType("text/html; charset=UTF-8");
@@ -47,6 +51,7 @@ public class Loginservlet extends HttpServlet {
             out.println("</html>");
 
         }else{
+            /*Caso contrario muestre un error de datos y retorne a el login*/
             getServletContext().getRequestDispatcher("/login.jsp").forward(req, resp);
         }
 

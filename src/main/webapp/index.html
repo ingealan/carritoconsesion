@@ -2,12 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sesion</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #2c3e50; /* Color de fondo frío */
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Estilo del encabezado */
+        h1 {
+            font-size: 48px;
+            margin-top: 50px;
+            color: #ecf0f1; /* Color claro para el texto */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilos de la lista de enlaces */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black; /* Color claro */
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #3498db; /* Azul más brillante para el hover */
+            color: #ecf0f1;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        a:active {
+            transform: scale(1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Fondo y animación */
+        body {
+            background: linear-gradient(to right, #2980b9, #8e44ad, #16a085); /* Gradiente frío */
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+    </style>
 </head>
 <body>
 <h1>Manejo de sesiones</h1>
-<li><a href="/sesiones/productohtml">Productos</a></li>
-<li><a href="/sesiones/login.html">Login</a></li>
-<li><a href="/sesiones/logout">Logout</a></li>
+<ul>
+    <li><a href="/sesiones/productohtml">Productos</a></li>
+    <li><a href="/sesiones/login.html">Login</a></li>
+    <li><a href="/sesiones/logout">Logout</a></li>
+</ul>
 </body>
 </html>

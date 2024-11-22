@@ -20,6 +20,7 @@ public class Logout extends HttpServlet {
         Optional<String> usernameOptional = auth.getUsername(req);
         if (usernameOptional.isPresent()) {
             HttpSession session = req.getSession();
+            /*Este metodo elimina la sesion*/
             session.invalidate();
         }
         resp.sendRedirect(req.getContextPath() + "/login.html");
