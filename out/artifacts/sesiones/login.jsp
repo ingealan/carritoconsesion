@@ -1,15 +1,15 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo de cookies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <style>
         body {
-            background: linear-gradient(45deg, #2980b9, #8e44ad, #16a085);
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #00ff00, #0000ff, #8a00ff);
             background-size: 400% 400%;
             animation: gradientAnimation 10s ease infinite;
             font-family: 'Arial', sans-serif;
@@ -29,6 +29,7 @@
         .container {
             border-radius: 15px;
             padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y semitransparente para contraste */
         }
 
         h1, h2 {
@@ -99,6 +100,6 @@
 </div>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-XgtLBubkPA2cxSe6tTYKqT2gGZj5zD9+2J+1K2Ra95IzhrBaFycrSzztS/Nu38/X" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesion</title>
+    <title>Manejo de sesiones</title>
     <style>
         /* Estilos generales */
         body {
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #00ff00, #0000ff, #8a00ff, blue);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
             font-family: 'Arial', sans-serif;
-            background: #2c3e50; /* Color de fondo frío */
             color: #ecf0f1;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Estilo del encabezado */
         h1 {
             font-size: 48px;
-            margin-top: 50px;
-            color: #ecf0f1; /* Color claro para el texto */
+            margin-bottom: 30px;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         }
 
@@ -27,6 +35,7 @@
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
@@ -37,7 +46,7 @@
         a {
             text-decoration: none;
             font-size: 22px;
-            color: black; /* Color claro */
+            color: #ecf0f1; /* Color claro */
             padding: 15px 30px;
             border-radius: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,7 +54,7 @@
         }
 
         a:hover {
-            background-color: #3498db; /* Azul más brillante para el hover */
+            background-color: #3498db; /* Azul brillante para el hover */
             color: #ecf0f1;
             transform: scale(1.1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -54,19 +63,6 @@
         a:active {
             transform: scale(1);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Fondo y animación */
-        body {
-            background: linear-gradient(to right, #2980b9, #8e44ad, #16a085); /* Gradiente frío */
-            background-size: 400% 400%;
-            animation: gradientAnimation 10s ease infinite;
-        }
-
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
 
     </style>
